@@ -1,7 +1,7 @@
-let matriz = nuevaArray(4);
+let matriz = new Array(4);
 
 for (let i = 0; i < 4; i++) {
-  matriz[i] = nuevaArray(4);
+  matriz[i] = new Array(4);
 }
 
 console.log(matriz);
@@ -16,7 +16,7 @@ for (let i = 0; i < 4; i++) {
   }
 }
 
-let filaSeleccionada = parseInt(prompt("Ingrese el número de la fila a sumar (0-3):"));
+const filaSeleccionada = parseInt(prompt("Ingrese el número de la fila a sumar (0-3):"));
 let sumaFila = 0;
 
 if (filaSeleccionada >= 0 && filaSeleccionada <= 3) {
@@ -33,7 +33,7 @@ let matriz2 = [];
 for (let i = 0; i < 4; i++) {
   matriz2[i] = [];
   for (let j = 0; j < 4; j++) {
-    let numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
+    const numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
     matriz2[i][j] = numero;
   }
 }
@@ -55,7 +55,7 @@ let matriz3 = [];
 for (let i = 0; i < 4; i++) {
   matriz3[i] = [];
   for (let j = 0; j < 4; j++) {
-    let numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
+    const numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
     matriz3[i][j] = numero;
   }
 }
@@ -81,7 +81,7 @@ while (!matrizValida) {
   for (let i = 0; i < 4; i++) {
     matriz4[i] = [];
     for (let j = 0; j < 4; j++) {
-      let numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
+      const numero = parseInt(prompt(`Ingrese el número para la posición [${i}][${j}]:`));
       matriz4[i][j] = numero;
     }
   }
@@ -106,6 +106,5 @@ function verificarMatriz(matriz) {
   }
   return true;
 }
-
 
 
