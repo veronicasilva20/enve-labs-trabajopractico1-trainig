@@ -31,57 +31,7 @@
 
     <h3>explicacion del codigo</h3>
 
-    <p>
-      Primero, se declara una matriz vacía llamada matriz utilizando el
-      constructor Array(4). Esta matriz será de 4 filas y 4 columnas. A
-      continuación, se utiliza un bucle for para repetir desde 0 hasta 3 y se
-      crea un array vacío para cada fila de la matriz utilizando matriz[i] =
-      nueva Array(4). Esto crea un array de 4 elementos para cada fila,
-      completando así las columnas de la matriz. Luego, se imprime la matriz
-      vacía utilizando console.log(matriz). En este punto, la matriz solo
-      contiene elementos undefined. Después, se declara otra matriz llamada
-      matriz1 como un array vacío []. Se utiliza un bucle for para repetir desde
-      0 hasta 3, y en cada iteración, se crea un array vacío para cada fila de
-      matriz1 utilizando matriz1[i] = []. Dentro de ese bucle, se utiliza otro
-      bucle for para repetir desde 0 hasta 3, representando las columnas de la
-      matriz. En cada iteración de los bucles , se muestra un mensaje de prompt
-      solicitando al usuario ingresar un número para la posición [i][j] de la
-      matriz. El número ingresado por el usuario se convierte a un entero
-      utilizando parseInt(), y luego se asigna a matriz1[i][j]. Después de
-      completar la matriz matriz1, se solicita al usuario que ingrese el número
-      de una fila para calcular la suma de los elementos de esa fila. Se utiliza
-      un condicional if para verificar si el número de fila ingresado es válido
-      (entre 0 y 3). Si es válido, se utiliza un bucle for para sumar los
-      elementos de la fila seleccionada utilizando sumaFila +=
-      matriz1[filaSeleccionada][j]. Finalmente, se muestra el resultado de la
-      suma de la fila seleccionada utilizando console.log(). A continuación, se
-      declara otra matriz llamada matriz2 como un array vacío []. Se sigue un
-      proceso similar al paso 5-8 para completar matriz2. Luego, se solicita al
-      usuario que ingrese el número de una columna para calcular la suma de los
-      elementos de esa columna. Se utiliza un condicional if para verificar si
-      el número de columna ingresado es válido (entre 0 y 3). Si es válido, se
-      utiliza un bucle for para sumar los elementos de la columna seleccionada
-      utilizando sumaColumna += matriz2[i][columnaSeleccionada]. Se muestra el
-      resultado de la suma de la columna seleccionada utilizando console.log().
-      Se declara otra matriz llamada matriz3 como un array vacío []. Se sigue un
-      proceso similar al paso 5-8 para completar matriz3. Se utiliza un bucle
-      for para calcular la suma de los elementos de la diagonal principal y la
-      diagonal inversa. Se muestran los resultados de las sumas utilizando
-      console.log(). Luego, se declara otra matriz llamada matriz4 como un array
-      vacío []. Se inicia un bucle while que continúa hasta que se ingrese una
-      matriz válida. Dentro del bucle, se sigue un proceso similar al paso 5-8
-      para completar matriz4. Se llama a la función verificarMatriz(matriz4)
-      para verificar si la matriz ingresada es válida. Esta función comprueba si
-      todos los elementos de la matriz son números utilizando un bucle for. Si
-      la matriz es inválida, se muestra un mensaje de error y se solicita al
-      usuario que ingrese la matriz nuevamente. Una vez que se ingresa una
-      matriz válida, se muestra la matriz utilizando console.log(). Al final, se
-      define la función verificarMatriz(matriz) que verifica si todos los
-      elementos de la matriz son números. Si algún elemento no es un número, la
-      función devuelve false; de lo contrario, devuelve true. Este código
-      permite al usuario ingresar valores para cada posición de la matriz y
-      realizar operaciones como sumar filas, columnas y diagonales.
-    </p>
+    
 
     <script src="main.js"></script>
   </body>
