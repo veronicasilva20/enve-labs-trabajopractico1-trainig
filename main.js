@@ -40,6 +40,8 @@ function crearMatrizVacia(filas, columnas) {
   }
   return matriz;
 }
+// llenar la matriz que indique el  usuario
+
 function rellenarMatriz(matriz) {
   for (let i = 0; i < matriz.length; i++) {
     for (let j = 0; j < matriz[i].length; j++) {
@@ -47,6 +49,8 @@ function rellenarMatriz(matriz) {
     }
   }
 }
+//sumar filas que indique el usuario(controlar que elija la  correcta)
+
 function sumarFila(matriz, fila) {
   let suma = 0;
   if (fila >= 1 && fila <= matriz.length) {
@@ -56,6 +60,8 @@ function sumarFila(matriz, fila) {
   }
   return suma;
 }
+//sumar las columnas que pida el  usuario (controlar que elija la corecta)
+
 function sumarColumna(matriz, columna) {
   let suma = 0;
   if (columna >= 1 && columna <= matriz[0].length) {
@@ -65,6 +71,8 @@ function sumarColumna(matriz, columna) {
   }
   return suma;
 }
+//sumar la diagonal principal(ejemplo)
+
 function sumarDiagonalPrincipal(matriz) {
   let suma = 0;
   for (let i = 0; i < matriz.length; i++) {
@@ -72,6 +80,8 @@ function sumarDiagonalPrincipal(matriz) {
   }
   return suma;
 }
+//sumar la diagonal inversa(ejemplo)
+
 function sumarDiagonalInversa(matriz) {
   let suma = 0;
   for (let i = 0; i < matriz.length; i++) {
@@ -95,6 +105,11 @@ function mostrarMatriz(matriz) {
     console.log(matriz[i]);
   }
 }
+// hasta que no haya la primera opcion.
+//el resto no debera ejecutarse
+// mostrar un  mesaje done diga rellenar la matriz.
+
+
 function mostrarMenu(matriz) {
   let opcion;
   do {
